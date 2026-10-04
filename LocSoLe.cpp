@@ -3,14 +3,11 @@
 using namespace std;
 
 int main() {
-    int N;
-    cout << "Nhap vao : ";
-    cin >> N;
-    for(int i=1; i <= N; i++) {
-        if(i % 2 ==0 ) {
-            continue;
+    for(int i=1; i <= 100; i++) {
+        if(i % 7 ==0) {
+            cout << "So dau tien chia het cho 7 trong khoang tu 1 den 100 la : " << i << endl;
+            break;
         }
-        cout << "Cac so le la : " << i << endl;
     }
     return 0;
-}
+} 
